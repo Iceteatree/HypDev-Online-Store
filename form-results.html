@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results of the form entry</title>
+</head>
+<body>
+    <section id="results">
+    </section>
+    <a href="login.html">Back to login page</a>
+    <script>
+        let resultsList = document.getElementById("results")
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            resultsList.append(`${name}: ${value}`);
+            resultsList.append(document.createElement('br'));
+        })
+    </script>
+</body>
+</html>

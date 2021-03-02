@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>starvinc - Delivering home made meals right to your door</title>
+
+  <!-- External CDNS such as Bootstrap 5.0 Beta2, icons from Font Awesome and Bootstrap and Fonts from Google Fonts -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Linking to an external stylesheet -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!-- This section basically holds the top navigation bar -->
+  <header class="colored-section">
+    <!-- Using some bootstrap to make things look decent -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- An imported icon from bootstrap icons -->
+      <div class=dropdownMenu>
+        <i class="bi bi-egg-fried"></i><a class="navbar-brand header-logo" href="">starvinc</a>
+        <ul class="subLinks">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="catalogue.html">Browse</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item"><a href="login.html">Login/Register</a></li>
+        </ul>
+      </div>
+      <!-- Creating a flexible form that holds the search bar with some lovely bootstrap-->
+      <form class="d-flex ms-auto">
+        <input class="form-control searchbar me-2" type="search" name="search" placeholder="Search for food items here. This function hasn't been programmed yet." aria-label="Search">
+        <button class="btn searchbarbtn btn-outline-light" type="submit">Search</button>
+      </form>
+      <!-- This basically creates the items within the nav bar and links them to their relative pages -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="catalogue.html">Browse</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+        <li class="nav-item"><a href="login.html">Login/Register</a></li>
+        <li class="nav-item nav-cart"><a href="cart.html"><i class="bi bi-basket"></i> Cart <span>0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Using divs as containers that hold sections of my work. You see so many classes because I am using bootstrap which inherently targets the classes -->
+    <div class="container-fluid mainhomebody">
+      <div class="row">
+        <div class="col-lg-12 HomePageHeader">
+          <img src="images/Coverpage.jpg" alt="coverpage">
+          <h1><i class="bi bi-egg-fried"></i>starvinc</h1>
+          <h2>Good food at home</h2>
+        </div>
+        <!-- This section is creating a carousel function using bootstrap. Yes all the classes are neccesary. -->
+        <section class="colored-section col-lg-12" id="specialss">
+          <h1>Our daily specials!</h1>
+          <div id="specials-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active container-fluid">
+                <h2 class="specials-text">Cheese Specials!</h2>
+                <a href="catalogue.html"> <img class="specials-image" src="images/cheese.jpg" alt="cheese"></a>
+                <h2 style="font-size:120px">R70</h2>
+              </div>
+              <div class="carousel-item container-fluid">
+                <h2 class="specials-text">Chocolate Cake!</h2>
+                <a href="catalogue.html"><img class="specials-image" src="images/chocolatecake.jpg" alt="chocolate-cake"></a>
+                <h2 style="font-size:120px">R40</h2>
+              </div>
+              <div class="carousel-item container-fluid">
+                <h2 class="specials-text">Fresssshest Tuna</h2>
+                <a href="catalogue.html"><img class="specials-image" src="images/tuna.jpg" alt="Tuna"></a>
+                <h2 style="font-size:120px">R50</h2>
+              </div>
+            </div>
+            <!-- The controls for the carousel link to the catalogue page -->
+            <a class="carousel-control-prev" href="#specials-carousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#specials-carousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </section>
+        <!-- This section holds our testimonials section  -->
+        <section class="Testemonials">
+          <h1>Testimonials</h1>
+          <!-- Creating a table that will hold the testimonials -->
+          <table class=tableoftests>
+            <thead>
+              <th>John</th>
+              <th>Lindiwe</th>
+              <th>Justin</th>
+            </thead>
+            <tbody>
+              <td class="test-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              <td class="test-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              <td class="test-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+            </tbody>
+            <tbody>
+              <td><img src="images/test1.jpg" alt="John" class="cropme"></td>
+              <td><img src="images/test3.jpg" alt="Lindiwe" class="cropme"></td>
+              <td><img src="images/test2.jpg" alt="Justin" class="cropme"></td>
+            </tbody>
+            <tbody>
+              <td><p></p></td>
+              <td><p></p></td>
+              <td><p></p></td>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Just a giant heading in the footer section that again links to the catalogue page. -->
+        <section class="footerhome">
+          <a href="catalogue.html"><h1>SHOP NOW</h1></a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- This is our footer navigation bar -->
+  <footer class="dark-section" id="footer">
+    <div class="container-fluid social-icons">
+      <!-- Links to the relevant social media pages -->
+      <a href="https://www.facebook.com"><i class="social-icon fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com"><i class="social-icon fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com"><i class="social-icon fab fa-instagram"></i></a>
+      <a href="mailto:Alan@fakeemail.com"><i class="social-icon fas fa-envelope"></i></a>
+      <p>© Copyright 2021 Alan Kow Hyperion Dev</p>
+    </div>
+  </footer>
+  <!-- cdn code for Boostrap 5.0 Beta 2 Javacode -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <!-- Linking jquery to this html file from Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Linking my javascript file -->
+  <script type="text/javascript" src="javascript/main.js"></script>
+</body>
+
+</html>
+
+
+<!-- references
+https://unsplash.com/photos/DL4OseW7WD8
+https://unsplash.com/photos/aZzXKGcyWqk
+https://unsplash.com/photos/0f9r8oR4dtI
+https://unsplash.com/photos/ix9I7kfMpcc
+
+-->

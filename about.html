@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>starvinc - Delivering home made meals right to your door</title>
+
+  <!-- External CDNS such as Bootstrap 5.0 Beta2, icons from Font Awesome and Fonts from Google Fonts -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header class="colored-section">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class=dropdownMenu>
+        <i class="bi bi-egg-fried"></i><a class="navbar-brand header-logo" href="">starvinc</a>
+        <ul class="subLinks">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="catalogue.html">Browse</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item"><a href="login.html">Login/Register</a></li>
+        </ul>
+      </div>
+      <form class="d-flex ms-auto">
+        <input class="form-control searchbar me-2" type="search" placeholder="Search for food items here. This function hasn't been programmed yet" aria-label="Search">
+        <button class="btn searchbarbtn btn-outline-light" type="submit">Search</button>
+      </form>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="catalogue.html">Browse</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+        <li class="nav-item"><a href="login.html">Login/Register</a></li>
+        <li class="nav-item nav-cart"><a href="cart.html"><i class="bi bi-basket"></i> Cart <span>0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="starvincIntro colored-section">
+      <div class="row">
+        <div class="col-lg-6 aboutstarvinc">
+          <h1>About <span class="starvinctext"><i class="bi bi-egg-fried"></i>starvinc</span> </h1>
+          <p>
+            <span class="starvinctext">starvinc</span> is a company founded on the values of <strong><em>trust</em></strong>, <strong><em>honesty</em></strong> and <strong><em>general goodness</em></strong>. We aim to provide the warmth and memories
+            of your childhood with our home cooked meals.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/About.jpg" class="img.fluid aboutImage" alt="Picture of Food">
+        </div>
+      </div>
+    </section>
+
+    <section class="starvincFounders white-section">
+      <div class="container-fluid foundersrow">
+        <h1 class="FounderHeading">Meet the <u style="color: #8db596">Founders</u></h1>
+        <div class="row">
+          <div class="col-lg-4">
+            <h2>Sipho</h2>
+            <img class="founder-image" src="images/sipho.jpg" alt="Image of Sipho">
+            <p class="founders-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas integer. Pellentesque eu tincidunt tortor aliquam nulla
+              facilisi. Eget
+              lorem dolor sed viverra ipsum.</p>
+          </div>
+          <div class="col-lg-4">
+            <h2>Mary</h2>
+            <img class="founder-image" src="images/mary.jpg" alt="Image of Mary">
+            <p class="founders-text">Vel pretium lectus quam id. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Aliquam vestibulum morbi blandit cursus risus at
+              ultrices. Odio aenean sed
+              adipiscing diam donec adipiscing tristique.</p>
+          </div>
+          <div class="col-lg-4">
+            <h2>Joseph</h2>
+            <img class="founder-image" src="images/joseph.jpg" alt="Image of Joseph">
+            <p class="founders-text">Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Consequat ac felis donec et. Id diam maecenas ultricies mi eget. Magnis dis parturient montes nascetur ridiculus mus mauris vitae.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="colored-section about-food">
+      <!-- Fancy moving page thing -->
+      <div class="fancypagething">
+        <h1>Food is where the home is</h1>
+      </div>
+      <br>
+      <div class="row FoodPreperation">
+        <div class="col-lg-6 FoodTitlePrep">
+          <div class="vl">
+            <h1>What's in our food?</h1>
+          </div>
+        </div>
+        <div class="col-lg-6 FoodDescPrep">
+          <h2>We only use the freshest ingredients to prepare your food. Our sources are 100% HDCP compliant. Our food scientists work day and night to ensure your meals are safe and delicious.</h2>
+          <img class="foodscientst" src="images/foodscientist.jpg" alt="Food scientists lol">
+          <div class="RandoText">
+            <h2>So what are you waiting for?</h2>
+            <br>
+            <h1>Start shopping</h1>
+            <br>
+            <a href="catalogue.html" class="btn btn-dark calltoactionbtn" tabindex="-1" role="button">NOW!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid social-icons">
+      <a href="https://www.facebook.com"><i class="social-icon fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com"><i class="social-icon fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com"><i class="social-icon fab fa-instagram"></i></a>
+      <a href="mailto:Alan@fakeemail.com"><i class="social-icon fas fa-envelope"></i></a>
+      <p>© Copyright 2021 Alan Kow Hyperion Dev</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <!-- Linking jquery to this html file from Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Linking my javascript file -->
+  <script type="text/javascript" src="javascript/main.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- References for images
+https://unsplash.com/photos/GTA7esV5ncw
+https://unsplash.com/photos/nJHvhXS4C0U
+https://unsplash.com/photos/U3G3ed8-BT4
+https://unsplash.com/photos/oz1NzV2xWXU
+https://unsplash.com/photos/kyuPjZudBKs
+
+
+ -->

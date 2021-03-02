@@ -1,0 +1,615 @@
+/* DISCLAIMER: This was from Capstone Project 1 so it is very disorganised. I do know how to better layout in the future though!! Sorry for the loooooong file. */
+
+
+/* Setting the background colour of the entire page */
+html {
+  background-color: #8db596;
+}
+
+/* Changing the font family and center aligning everything */
+body{
+  font-family: "Century Gothic", sans-serif;
+  text-align: center;
+}
+
+/* Googled around and this gets the scrollbars to dissapear but keeps the functionality for Chrome browsers. Haven't figured out Firefox yet. */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Just a lot of little tiny changes */
+main {
+  margin-top: 60px;
+  background-color: #8db596;
+}
+
+h1 {
+  font-family: "Cutive", serif;
+  font-size: 5rem
+}
+h2{
+  font-family: "Montserrat", sans-serif;
+  font-weight:500;
+  font-size: 3rem;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+hr {
+  border:none;
+  border-top:20px dotted white;
+  background-color:#8db596;
+  height:1px;
+  width:100%;
+}
+
+
+/* Sections */
+.colored-section {
+  background-color: #8db596;
+  color: #000;
+}
+
+.white-section {
+  background-color: #fff;
+  color:#707070;
+}
+
+/* Header */
+
+.navbar {
+  font-family: Montserrat, sans-serif;
+  position:fixed;
+  /* I use z-index often within the css. It basically tells the html what can appear infront, and what can appear behind. The dedault z - index for all elements is 1. So applying a z-index 
+  of 3 allows it to appear at the front of the page. Z Index can only be used if you've changed the position from default to something else.*/
+  z-index: 3;
+  top: 0;
+  width: 100%;
+}
+
+.header-logo {
+  font-family: "Cutive", serif;
+  padding: 0 0.5rem;
+  font-weight:900;
+}
+
+.bi-egg-fried {
+  color: #fff;
+  padding:0 0 0.2rem 1rem;
+}
+
+.navbar-nav {
+  padding: 0.5rem;
+}
+
+.nav-item a{
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-cart a {
+  background-color: #8db596;
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+/* When you hover over the anchors within the nav item class the colour will change. */
+.nav-item a:hover{
+  color:#bedbbb;
+}
+
+form .searchbar{
+  width: 50vw;
+}
+
+/* Main */
+
+/* Index Page */
+
+.mainhomebody {
+  width:100%;
+  color:#fff;
+  margin: 0;
+}
+
+.HomePageHeader h1{
+  position:absolute;
+  top: 50px;
+  left: 800px;;
+  font-size:10rem;
+  padding: 3rem auto;;
+  margin:10rem auto 1rem auto;
+}
+
+.HomePageHeader img{
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  width: 100%;
+  padding:0;
+}
+
+.HomePageHeader h2 {
+  font-size:2.5rem;
+  position: absolute;
+  top: 375px;
+  left: 1370px;
+  z-index: 1;
+  display: inline-flex;
+  padding: 0 auto;
+  margin:0 auto;
+}
+
+.HomePageHeader i {
+  padding: 0 2rem;
+}
+
+#specialss {
+  margin-top:5%;
+  color: #8db596;
+  background-color: #fff;
+  padding: 5rem;
+}
+
+.specials-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  color:#8db596;
+}
+
+.specials-image {
+  width: 30%;
+  border: 3px solid white;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 2rem;
+}
+
+/* Carousel section */
+.carousel-control-next,
+.carousel-control-prev {
+  height: 100%;
+  outline: black;
+  background-size: 100%, 100%;
+}
+
+/* Just adding some button icons that make it look like its going back and forward */
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #8db596;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #8db596;
+}
+
+.Testemonials {
+  padding-top:5%;
+  padding-bottom: 5%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tableoftests {
+  border: 5px double white;
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+thead th{
+  font-size: 3.5rem;
+}
+
+tbody .cropme{
+  border: 10px solid White;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit:contain;
+}
+
+tbody .test-text {
+  width:600px;
+  padding:2rem;
+}
+
+.footerhome {
+  display: inline;
+  padding: 10%;
+  color: #8db596;
+  background-color: white;
+}
+
+.footerhome a {
+  color:#8db596;
+}
+
+/* About Page */
+
+.aboutstarvinc {
+  padding:7% 10% 7% 10%;
+  height: 1200px;
+  color: #fff;
+}
+
+.aboutstarvinc p {
+  width:80%;
+  margin:3rem auto;
+
+}
+
+h1 .starvinctext {
+  font-family: "MontserratBold";
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+p .starvinctext {
+  font-weight: bold;
+}
+
+div .aboutImage {
+  width:50%;
+  margin: 0;
+  position: absolute;
+  left:50%;
+  z-index: 1;
+}
+
+.starvincFounders {
+  position: relative;
+  z-index: 2;
+  padding: 10rem;
+  height: 80rem;
+}
+
+div .FounderHeading {
+  padding-bottom: 5rem;
+
+}
+
+.founder-image {
+  width: 50%;
+  border-radius: 100%;
+  padding: 2rem;
+  margin: 4rem;
+  border: #bedbbb solid 8px;
+}
+
+.founders-text {
+  width: 70%;
+  margin:0 auto;
+}
+
+/* parralax scrollbar - where the image stays in the background but the section moves past it making it seem as if the image is still but the section cuts through it with a window. */
+
+.fancypagething{
+  background-image: url("../images/bread.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+
+}
+.fancypagething h1 {
+  min-height: 800px;
+  color:white;
+  padding:2em;
+}
+
+section .FoodPreperation {
+  margin:8rem 8rem 0rem 8rem;
+  min-height: 700px;
+  color: white;
+}
+
+.FoodTitlePrep {
+  width:30%;
+  height: 800px;
+}
+
+.FoodTitlePrep h1{
+  padding-top: 50%;
+  padding-right: 3rem;
+  margin: 0 auto;
+}
+
+.FoodDescPrep {
+  margin: 0;
+  padding: 0;
+  width:70%;
+  height:900px
+}
+
+.vl {
+  margin:0 auto;
+  border-right: 6px dotted #707070;
+  height: 700px;
+  padding-left: 0rem;
+}
+
+.foodscientst {
+  margin: 2rem 70% 2rem 0rem;
+  object-fit:contain;
+  width:25%;
+  height:auto;
+  max-height: 800px;
+  border: 5pt solid white;
+}
+.RandoText {
+  position: relative;
+  bottom: 35rem;
+  margin:2rem 0rem 2rem 40%;
+  width:50%;
+}
+
+.calltoactionbtn {
+  border-radius: 30px;
+  font-size: 5rem;
+}
+
+
+
+/* Catalogue Page */
+.breakfast-row .side-bar-color{
+  padding: 5rem;
+
+}
+.side-bar {
+  background-color: white;
+  position:fixed;
+  left:6%;
+  height:10%;
+}
+
+.side-bar-color {
+  background-color: white;
+  border-right: 8px solid black;
+}
+
+.Cat-Title {
+  padding:5% 0 0;
+  margin: 0 auto;;
+  color: white;
+}
+
+.Cat-Title-Breakfast {
+  text-align: left;
+  color: white;
+}
+
+.product-card {
+  padding: 2%;
+  border: 5px solid white;
+}
+
+.FooterWall {
+  height:50px;
+  background-color: #212529;
+}
+
+.container-fluid a{
+  text-decoration: none;
+}
+.Foodname {
+  margin:2rem;
+  color: white;
+}
+
+.lunch-row h2,
+.breakfast-row h2,
+.dinner-row h2 {
+  padding:3rem;
+}
+
+.side-bar li {
+  font-size: 60px;
+  margin: 0 5rem 5rem 0;
+  list-style: none;
+  color:black;
+}
+div .product-card:hover {
+  border-color:black;
+  }
+
+.product-card img:hover{
+  top:-150px;
+  left:-150px;
+  max-width: 150%;
+  position:relative;
+  z-index: 999;
+}
+
+/* Styling for contact page is done instyle on the page */
+
+/* Footer */
+
+#footer{
+  background-color:#212529;;
+  color: #fff;
+  position:fixed;
+  z-index: 3;
+  bottom: 0;
+  width: 100%;
+  padding: 0.3rem;
+  margin: 0;
+  font-size: 10pt;
+}
+
+.social-icons a{
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Login Menu */
+
+.LoginTitle {
+  padding-top: 5rem;
+}
+
+.login-menu{
+  width:30%;
+  margin: 0 auto 1rem auto;
+  padding: 2% 5% 5% 5% ;
+}
+
+.description-panel{
+  border: 8px solid white;
+  height:100%;
+}
+
+.description-panel p{
+  display:inline-inline-block;
+  padding:2rem;
+}
+
+.description-panel button{
+  margin:2rem 2rem;
+}
+
+
+/* Cart Section */
+.cart-section {
+  max-width: 800px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.cartRow {
+  width:100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid black;
+  margin: 0 auto;
+}
+
+.price {
+  width: 20%;
+  display: inline;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+.quantity {
+  width: 15%;
+  display: inline;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 1rem 0 1.5rem;
+}
+
+.quantity span{
+  padding: 16px;
+}
+
+.total {
+  width: 20%;
+  display: inline;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 1rem;;
+}
+.product {
+  width:45%;
+  display: inline;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 1rem;;
+}
+
+.cartItems {
+  width: 100%;
+  display: inline-block;
+}
+
+.cartItems img {
+  width:75px;
+  align-items: center;
+  margin: 0 1rem 0 1rem;
+}
+.foodNameCart{
+  margin-left: 1rem;
+}
+.btnDeleteItem {
+  margin-right: 4rem;
+}
+.formCouponDiv {
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.basketTotalContainer {
+  display:inline;
+  justify-content: right;
+  width:100%;
+  padding: 1rem;
+}
+
+.addVat, .subTotalTitle, .discountTitle, .deliveryTitle {
+  padding: 1rem;
+  display: inline-block;
+  width: 70%;
+}
+
+.vatTotal, .subTotal, .discountTotal, .deliveryTotal {
+  padding: 1rem;
+  display: inline-block;
+  width: 10%;
+}
+
+.basketTotalTitle {
+  padding: 1rem;
+  display: inline-block;
+  width: 70%;
+}
+
+.basketTotal {
+  padding: 1rem;
+  display: inline-block;
+}
+
+.dropdownMenu li {
+  position:relative;
+  padding: 1rem;
+  background-color: #212529;
+}
+
+.dropdownMenu {
+  background-color: #212529;
+}
+
+.subLinks {
+  position:absolute;
+  list-style:none;
+  display: none;
+  padding: 1rem;
+}
+
+.btn-purchase {
+  margin: 3rem auto 10rem auto;
+}
+
+
+
+/* Color Palette
+#bedbbb Light Green
+#8db596 Green
+#92817a Brown
+#707070 Dark Brown
+ */
